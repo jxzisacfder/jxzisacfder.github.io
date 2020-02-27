@@ -23,7 +23,7 @@ category-all-page {
     margin: 10px 15px;
   }
   .category-all-page .category-list-item-list-count {
-    color: $grey;
+    color: $gray;
   }
   .category-all-page .category-list-item-list-count:before {
     display: inline;
@@ -37,7 +37,7 @@ category-all-page {
     margin: 10px 10px;
   }
   .category-all-page .category-list-count {
-    color: $grey;
+    color: $gray;
   }
   .category-all-page .category-list-count:before {
     display: inline;
