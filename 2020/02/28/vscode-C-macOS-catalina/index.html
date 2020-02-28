@@ -29,6 +29,8 @@
 <!-- analytics -->
 
 
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+
 
 
 
@@ -128,13 +130,13 @@
 
 
 
-
-
-
-
-    <!-- Prettify Theme -->
+    <!-- prism.css -->
     
-    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+    <link rel="preload" href="/lib/prism/prism-line-numbers.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/lib/prism/prism-line-numbers.min.css"></noscript><link rel="preload" href="/lib/prism/prism-default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/lib/prism/prism-default.min.css"></noscript>
+
+
+
+
 
 
 
@@ -163,6 +165,15 @@
 
     <!-- ### Analytics ### -->
     
+    <!-- Google Analytics -->
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-159326044-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
 
 
 
@@ -199,9 +210,9 @@
         "name": "jxz4real",
         "image": {
             "@type": "ImageObject",
-            "url": "http://yoursite.com/img/default_avatar.png"
+            "url": "http://yoursite.com/img/IMG_20190617_175609.JPG"
         },
-        "description": "Hi, nice to meet you."
+        "description": "Perfection is the enemy of done."
     },
     "publisher": {
         "@type": "Organization",
@@ -214,7 +225,7 @@
     
     "potentialAction": {
         "@type": "SearchAction",
-        "target": "http://yoursite.com/search?s={search_term_string}",
+        "target": "http://yoursite.com/?s={search_term_string}",
         "query-input": "required name=search_term_string"
     },
     
@@ -240,7 +251,7 @@
     <p class="text-center header-slogan">
         
             
-                Hi, nice to meet you.
+                Perfection is the enemy of done.
             
         
     </p>
@@ -253,72 +264,11 @@
         <a href="/archives/" class="navbar-link">归档</a>
     
     
-        <a href="/search" class="navbar-link">搜索</a>
+        <a href="" class="navbar-link">搜索</a>
     
     
+        <a href="https://www.liaoxuefeng.com/wiki/1016959663602400 https://www.runoob.com/ https://docs.sympy.org/1.5.1/index.html https://theme-suka.skk.moe/docs/" target="_blank" rel="noopener" class="navbar-link">useful links</a>
     
-        <div class="dropdown dropdown-right">
-    <a class="navbar-link dropdown-toggle" tabindex="0">分享</a>
-    <ul class="menu share-menu">
-
-        <!-- Share Weibo -->
-        
-        <li class="menu-item">
-            <a href="http://service.weibo.com/share/share.php?appkey=&title=jxz4real の blog&url=http://yoursite.com&pic=http://yoursite.com/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">分享到微博</a>
-        </li>
-        
-
-        <!-- Share Twitter -->
-        
-        <li class="menu-item">
-            <a href="https://twitter.com/intent/tweet?text=jxz4real の blog&url=http://yoursite.com&via=jxz4real" target="_blank" rel="external noopener noreferrer nofollow">分享到 Twitter</a>
-        </li>
-        
-
-        <!-- Share Facebook -->
-        
-        <li class="menu-item">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com" target="_blank" rel="external noopener noreferrer nofollow">分享到 Facebook</a>
-        </li>
-        
-
-        <!-- Share Google+ -->
-        
-        <li class="menu-item">
-            <a href="https://plus.google.com/share?url=http://yoursite.com" target="_blank" rel="external noopener noreferrer nofollow">分享到 Google+</a>
-        </li>
-        
-
-        <!-- Share LinkedIn -->
-        
-        <li class="menu-item">
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com&title=解决vscode在macos Catalina上配置C/C++环境及调试问题" target="_blank" rel="external noopener noreferrer nofollow">分享到 LinkedIn</a>
-        </li>
-        
-
-        <!-- Share QQ -->
-        
-        <li class="menu-item">
-            <a href="http://connect.qq.com/widget/shareqq/index.html?site=jxz4real の blog&title=解决vscode在macos Catalina上配置C/C++环境及调试问题&summary=爷的秋秋空间&pics=http://yoursite.com/img/suka-favicon.ico&url=http://yoursite.com" target="_blank" rel="external noopener noreferrer nofollow"> 分享到 QQ</a>
-        </li>
-        
-
-        <!-- Share Telegram -->
-        
-        <li class="menu-item">
-            <a href="https://t.me/share/url?url=http://yoursite.com&text=解决vscode在macos Catalina上配置C/C++环境及调试问题" target="_blank" rel="external noopener noreferrer nofollow">分享到 Telegram</a>
-        </li>
-        
-
-        <!-- QRCode -->
-        
-        <li class="menu-item">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB3klEQVR42u3a0Y6DIBSEYd//pXevmjRWZv6DbQLH8abN1pXPBJEzcPwteBxBBRVUUBeoQxyv38+fr+/vfz9f76NB005QvVCXne7U8KgxBz3flGwnqFYo1cGvOvMIrL6rdoJ6DsoNiqqjBxXU8GQz8F2hHDSo/qhKg+p/1eTwa7OEoJZHVQuH2c+fVjNBLYPC4cNgQBx1YPL77dQlqCVRZFLniodKUavaDaoHyoUYZGAlRQKZQAbVA+WCU3UeCUfctYLqhyIDKA0wXHimzgmqD6q6UKQeDBXSkkliUL1QNMAgxQUJSoJ6BkqF8uoFPHoQSKgbVD+UOtEtNtIAV93MMHUJqh2KhrF3ioWPdoNqgXJhWaXYJNeS8KBaoMiLkw6EdCPYdMAR1HaoO4UAHVjljQTVAqUGProISQN/FYwE1QdFJ2YzA2ZlcSmoPijXMN0QQR6WqdQlqO1Q3ygYqpt3UOEQ1LYot5BDBkP6wr41yQtqG1S1k9JFAbIZbHrzaVBLo8iGZrLxoRrQokleUNui1MKPg9ANOeWOHtT2qJmggga4bvNOUM9FzWwcrARpQT0DRTs4fQjkzQXVCuXCLbVgSTZUkFAkqD4oVziQyV51AohTl6C2Q610BBVUUEG9Hf8cHIA/cZI/cAAAAABJRU5ErkJggg==" alr="QRCode">
-        </li>
-        
-
-    </ul>
-</div>
     
     
 </nav>
@@ -341,7 +291,7 @@
 
 <div class="post-header-info">
     <p class="post-header-info-left text-gray">
-        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="jxz4real's Avatar">
+        <img class="author-thumb lazyload" data-src="/img/IMG_20190617_175609.JPG" src="/img/suka-lazyload.gif" alt="jxz4real's Avatar">
         <span>2020-02-28</span>
         
             <span class="suka-devide-dot"></span>
@@ -372,30 +322,14 @@
 
     <!-- Share Twitter -->
     
-    <li class="menu-item">
-        <a href="https://twitter.com/intent/tweet?text=解决vscode在macos Catalina上配置C/C++环境及调试问题&url=http://yoursite.com/2020/02/28/vscode-C-macOS-catalina/&via=jxz4real" target="_blank" rel="external noopener noreferrer nofollow">分享到 Twitter</a>
-    </li>
-    
 
     <!-- Share Facebook -->
-    
-    <li class="menu-item">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/02/28/vscode-C-macOS-catalina/" target="_blank" rel="external noopener noreferrer nofollow">分享到 Facebook</a>
-    </li>
     
 
     <!-- Share Google+ -->
     
-    <li class="menu-item">
-        <a href="https://plus.google.com/share?url=http://yoursite.com/2020/02/28/vscode-C-macOS-catalina/" target="_blank" rel="external noopener noreferrer nofollow">分享到 Google+</a>
-    </li>
-    
 
     <!-- Share LinkedIn -->
-    
-    <li class="menu-item">
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com/2020/02/28/vscode-C-macOS-catalina/&title=jxz4real の blog" target="_blank" rel="external noopener noreferrer nofollow">分享到 LinkedIn</a>
-    </li>
     
 
     <!-- Share QQ -->
@@ -406,10 +340,6 @@
     
 
     <!-- Share Telegram -->
-    
-    <li class="menu-item">
-        <a href="https://t.me/share/url?url=http://yoursite.com/2020/02/28/vscode-C-macOS-catalina/&text=jxz4real の blog" target="_blank" rel="external noopener noreferrer nofollow">分享到 Telegram</a>
-    </li>
     
 
     <!-- QRCode -->
@@ -548,8 +478,8 @@
 
     &quot;code-runner.runInTerminal&quot;: true, // 设置成false会在“输出”中输出，无法输入
     /*&quot;code-runner.executorMap&quot;: {
-        &quot;c&quot;: &quot;cd $dir &amp;&amp; gcc &apos;$fileName&apos; -o &apos;$fileNameWithoutExt.exe&apos; -Wall -g -O2 -static-libgcc -std=c11 -fexec-charset=GBK &amp;&amp; &amp;&apos;$dir$fileNameWithoutExt&apos;&quot;,
-        &quot;cpp&quot;: &quot;cd $dir &amp;&amp; g++ &apos;$fileName&apos; -o &apos;$fileNameWithoutExt.exe&apos; -Wall -g -O2 -static-libgcc -std=c++17 -fexec-charset=GBK &amp;&amp; &amp;&apos;$dir$fileNameWithoutExt&apos;&quot;
+        &quot;c&quot;: &quot;cd $dir &amp;&amp; gcc &#39;$fileName&#39; -o &#39;$fileNameWithoutExt.exe&#39; -Wall -g -O2 -static-libgcc -std=c11 -fexec-charset=GBK &amp;&amp; &amp;&#39;$dir$fileNameWithoutExt&#39;&quot;,
+        &quot;cpp&quot;: &quot;cd $dir &amp;&amp; g++ &#39;$fileName&#39; -o &#39;$fileNameWithoutExt.exe&#39; -Wall -g -O2 -static-libgcc -std=c++17 -fexec-charset=GBK &amp;&amp; &amp;&#39;$dir$fileNameWithoutExt&#39;&quot;
         // &quot;c&quot;: &quot;cd $dir &amp;&amp; gcc $fileName -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc -std=c11 -fexec-charset=GBK &amp;&amp; $dir$fileNameWithoutExt&quot;,
         // &quot;cpp&quot;: &quot;cd $dir &amp;&amp; g++ $fileName -o $fileNameWithoutExt.exe -Wall -g -O2 -static-libgcc -std=c++17 -fexec-charset=GBK &amp;&amp; $dir$fileNameWithoutExt&quot;
     }, // 右键run code时运行的命令；未注释的仅适用于PowerShell（Win10默认），文件名中有空格也可以编译运行；注释掉的适用于cmd（win7默认），PS和bash也能用，但文件名中有空格时无法运行*/
@@ -573,6 +503,19 @@
 
                     </article>
                     
+    <blockquote class="post-license">
+        <p>
+            <strong>本文作者&nbsp;:&nbsp;jxz4real</strong>
+            <br>
+            <strong>
+            
+                本文使用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)</a> 协议
+            </strong>
+            <br>
+            <strong>本文链接&nbsp;:&nbsp;</strong><a href="http://yoursite.com/2020/02/28/vscode-C-macOS-catalina/">http://yoursite.com/2020/02/28/vscode-C-macOS-catalina/</a>
+        </p>
+    </blockquote>
+
 
 
     <blockquote id="date-expire-notification" class="post-expired-notify">本文最后更新于 <span id="date-expire-num"></span> 天前，文中所描述的信息可能已发生改变</blockquote>
@@ -687,7 +630,17 @@ window.lazyLoadOptions = {
     elements_selector: ".lazyload",
     threshold: 50
 };
-document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+(function() {
+    var copyrightNow = new Date().getFullYear();
+    var copyrightContent = document.getElementById('copyright-year');
+    var copyrightSince = 2020;
+    if (copyrightSince === copyrightNow) {
+        copyrightContent.textContent = copyrightNow;
+    } else {
+        copyrightContent.textContent = copyrightSince + ' - ' + copyrightNow;
+    }
+})();
 console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
 
 </script>

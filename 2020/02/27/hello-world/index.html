@@ -29,6 +29,8 @@
 <!-- analytics -->
 
 
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+
 
 
 
@@ -128,13 +130,13 @@
 
 
 
-
-
-
-
-    <!-- Prettify Theme -->
+    <!-- prism.css -->
     
-    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+    <link rel="preload" href="/lib/prism/prism-line-numbers.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/lib/prism/prism-line-numbers.min.css"></noscript><link rel="preload" href="/lib/prism/prism-default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/lib/prism/prism-default.min.css"></noscript>
+
+
+
+
 
 
 
@@ -163,6 +165,15 @@
 
     <!-- ### Analytics ### -->
     
+    <!-- Google Analytics -->
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-159326044-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
 
 
 
@@ -199,9 +210,9 @@
         "name": "jxz4real",
         "image": {
             "@type": "ImageObject",
-            "url": "http://yoursite.com/img/default_avatar.png"
+            "url": "http://yoursite.com/img/IMG_20190617_175609.JPG"
         },
-        "description": "Hi, nice to meet you."
+        "description": "Perfection is the enemy of done."
     },
     "publisher": {
         "@type": "Organization",
@@ -214,7 +225,7 @@
     
     "potentialAction": {
         "@type": "SearchAction",
-        "target": "http://yoursite.com/search?s={search_term_string}",
+        "target": "http://yoursite.com/?s={search_term_string}",
         "query-input": "required name=search_term_string"
     },
     
@@ -240,7 +251,7 @@
     <p class="text-center header-slogan">
         
             
-                Hi, nice to meet you.
+                Perfection is the enemy of done.
             
         
     </p>
@@ -253,72 +264,11 @@
         <a href="/archives/" class="navbar-link">归档</a>
     
     
-        <a href="/search" class="navbar-link">搜索</a>
+        <a href="" class="navbar-link">搜索</a>
     
     
+        <a href="https://www.liaoxuefeng.com/wiki/1016959663602400 https://www.runoob.com/ https://docs.sympy.org/1.5.1/index.html https://theme-suka.skk.moe/docs/" target="_blank" rel="noopener" class="navbar-link">useful links</a>
     
-        <div class="dropdown dropdown-right">
-    <a class="navbar-link dropdown-toggle" tabindex="0">分享</a>
-    <ul class="menu share-menu">
-
-        <!-- Share Weibo -->
-        
-        <li class="menu-item">
-            <a href="http://service.weibo.com/share/share.php?appkey=&title=jxz4real の blog&url=http://yoursite.com&pic=http://yoursite.com/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">分享到微博</a>
-        </li>
-        
-
-        <!-- Share Twitter -->
-        
-        <li class="menu-item">
-            <a href="https://twitter.com/intent/tweet?text=jxz4real の blog&url=http://yoursite.com&via=jxz4real" target="_blank" rel="external noopener noreferrer nofollow">分享到 Twitter</a>
-        </li>
-        
-
-        <!-- Share Facebook -->
-        
-        <li class="menu-item">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com" target="_blank" rel="external noopener noreferrer nofollow">分享到 Facebook</a>
-        </li>
-        
-
-        <!-- Share Google+ -->
-        
-        <li class="menu-item">
-            <a href="https://plus.google.com/share?url=http://yoursite.com" target="_blank" rel="external noopener noreferrer nofollow">分享到 Google+</a>
-        </li>
-        
-
-        <!-- Share LinkedIn -->
-        
-        <li class="menu-item">
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com&title=Hello World" target="_blank" rel="external noopener noreferrer nofollow">分享到 LinkedIn</a>
-        </li>
-        
-
-        <!-- Share QQ -->
-        
-        <li class="menu-item">
-            <a href="http://connect.qq.com/widget/shareqq/index.html?site=jxz4real の blog&title=Hello World&summary=爷的秋秋空间&pics=http://yoursite.com/img/suka-favicon.ico&url=http://yoursite.com" target="_blank" rel="external noopener noreferrer nofollow"> 分享到 QQ</a>
-        </li>
-        
-
-        <!-- Share Telegram -->
-        
-        <li class="menu-item">
-            <a href="https://t.me/share/url?url=http://yoursite.com&text=Hello World" target="_blank" rel="external noopener noreferrer nofollow">分享到 Telegram</a>
-        </li>
-        
-
-        <!-- QRCode -->
-        
-        <li class="menu-item">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB5UlEQVR42u3aQQ7CMAxE0d7/0rBhgSD2fEMXsTPdgFBpXyU3iR1fjw2PyyijjDJqgbqSY3XO+29fF339pq4R3seoMahl0C0AGYyC0/sYNQr1GXifn6vzVaCvzo/uY9RZqNVARwJdXc+oc1HRoBdBswcw6hwUHQgVJjrv1lWCUdujsgX9nZ+3ZTNGbY2SRYdFUJObZsH9d9XFqK1RWSBGE60qXEQTb3Z9o2ahKgNeJUHNCiNykWdUe5T6Ew3a5c3E9Yyah6JF06iYQQdWmXwYNQqVFTZIIqEQqrhh1BxUVvCiian6ng2wMhk1qh2KDmzRIk49iEpeUeJgVEtUNtipAVQFd1a0NWomiuDUJF0prP3VLGFUCxT9U2WTiT6EUfNQ5U2d6IKg8QtPyEa1RqmCV4ZVyQdpwDFqJko1LNOAVoOmehGMmoMiSUB10ZY2bxl1FIpMrNHCL3shSEJq1GxUNkGTBSJtIiwFulGtULRJotKYQxt7jJqFIo2CZKBUiSt6sYwagSJFjcoGdWUDE20YGdUSRYqqpLBaDXQ0IRvVFkWKXCS5II3MqFnCqNEotTlNE1FZnDPqSBQZMGmh/6dmCaPaoLKEgS4EK4kF3sUyqiWqMmlWC2V0s8ioOaidDqOMMsqot+MJy3gRoLiQreAAAAAASUVORK5CYII=" alr="QRCode">
-        </li>
-        
-
-    </ul>
-</div>
     
     
 </nav>
@@ -341,7 +291,7 @@
 
 <div class="post-header-info">
     <p class="post-header-info-left text-gray">
-        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="jxz4real's Avatar">
+        <img class="author-thumb lazyload" data-src="/img/IMG_20190617_175609.JPG" src="/img/suka-lazyload.gif" alt="jxz4real's Avatar">
         <span>2020-02-27</span>
         
             <span class="suka-devide-dot"></span>
@@ -372,30 +322,14 @@
 
     <!-- Share Twitter -->
     
-    <li class="menu-item">
-        <a href="https://twitter.com/intent/tweet?text=Hello World&url=http://yoursite.com/2020/02/27/hello-world/&via=jxz4real" target="_blank" rel="external noopener noreferrer nofollow">分享到 Twitter</a>
-    </li>
-    
 
     <!-- Share Facebook -->
-    
-    <li class="menu-item">
-        <a href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2020/02/27/hello-world/" target="_blank" rel="external noopener noreferrer nofollow">分享到 Facebook</a>
-    </li>
     
 
     <!-- Share Google+ -->
     
-    <li class="menu-item">
-        <a href="https://plus.google.com/share?url=http://yoursite.com/2020/02/27/hello-world/" target="_blank" rel="external noopener noreferrer nofollow">分享到 Google+</a>
-    </li>
-    
 
     <!-- Share LinkedIn -->
-    
-    <li class="menu-item">
-        <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com/2020/02/27/hello-world/&title=jxz4real の blog" target="_blank" rel="external noopener noreferrer nofollow">分享到 LinkedIn</a>
-    </li>
     
 
     <!-- Share QQ -->
@@ -406,10 +340,6 @@
     
 
     <!-- Share Telegram -->
-    
-    <li class="menu-item">
-        <a href="https://t.me/share/url?url=http://yoursite.com/2020/02/27/hello-world/&text=jxz4real の blog" target="_blank" rel="external noopener noreferrer nofollow">分享到 Telegram</a>
-    </li>
     
 
     <!-- QRCode -->
@@ -435,21 +365,30 @@
                     <article id="post-content">
                         <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <a id="more"></a>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers highlight language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers highlight language-bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers highlight language-bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers highlight language-bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 
                     </article>
                     
+    <blockquote class="post-license">
+        <p>
+            <strong>本文作者&nbsp;:&nbsp;jxz4real</strong>
+            <br>
+            <strong>
+            
+                本文使用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0)</a> 协议
+            </strong>
+            <br>
+            <strong>本文链接&nbsp;:&nbsp;</strong><a href="http://yoursite.com/2020/02/27/hello-world/">http://yoursite.com/2020/02/27/hello-world/</a>
+        </p>
+    </blockquote>
+
 
 
     <blockquote id="date-expire-notification" class="post-expired-notify">本文最后更新于 <span id="date-expire-num"></span> 天前，文中所描述的信息可能已发生改变</blockquote>
@@ -566,7 +505,17 @@ window.lazyLoadOptions = {
     elements_selector: ".lazyload",
     threshold: 50
 };
-document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+(function() {
+    var copyrightNow = new Date().getFullYear();
+    var copyrightContent = document.getElementById('copyright-year');
+    var copyrightSince = 2020;
+    if (copyrightSince === copyrightNow) {
+        copyrightContent.textContent = copyrightNow;
+    } else {
+        copyrightContent.textContent = copyrightSince + ' - ' + copyrightNow;
+    }
+})();
 console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
 
 </script>

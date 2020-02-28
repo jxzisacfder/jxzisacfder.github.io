@@ -29,6 +29,8 @@
 <!-- analytics -->
 
 
+    <link rel="dns-prefetch" href="//www.google-analytics.com">
+
 
 
 
@@ -128,12 +130,12 @@
 
 
 
-
-
-
-
-    <!-- Prettify Theme -->
+    <!-- prism.css -->
     
+
+
+
+
 
 
 
@@ -161,6 +163,15 @@
 
     <!-- ### Analytics ### -->
     
+    <!-- Google Analytics -->
+<script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-159326044-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+
+
 
 
 
@@ -189,7 +200,7 @@
     <p class="text-center header-slogan">
         
             
-                Hi, nice to meet you.
+                Perfection is the enemy of done.
             
         
     </p>
@@ -202,72 +213,11 @@
         <a href="/archives/" class="navbar-link">归档</a>
     
     
-        <a href="/search" class="navbar-link">搜索</a>
+        <a href="" class="navbar-link">搜索</a>
     
     
+        <a href="https://www.liaoxuefeng.com/wiki/1016959663602400 https://www.runoob.com/ https://docs.sympy.org/1.5.1/index.html https://theme-suka.skk.moe/docs/" target="_blank" rel="noopener" class="navbar-link">useful links</a>
     
-        <div class="dropdown dropdown-right">
-    <a class="navbar-link dropdown-toggle" tabindex="0">分享</a>
-    <ul class="menu share-menu">
-
-        <!-- Share Weibo -->
-        
-        <li class="menu-item">
-            <a href="http://service.weibo.com/share/share.php?appkey=&title=jxz4real の blog&url=http://yoursite.com&pic=http://yoursite.com/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">分享到微博</a>
-        </li>
-        
-
-        <!-- Share Twitter -->
-        
-        <li class="menu-item">
-            <a href="https://twitter.com/intent/tweet?text=jxz4real の blog&url=http://yoursite.com&via=jxz4real" target="_blank" rel="external noopener noreferrer nofollow">分享到 Twitter</a>
-        </li>
-        
-
-        <!-- Share Facebook -->
-        
-        <li class="menu-item">
-            <a href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com" target="_blank" rel="external noopener noreferrer nofollow">分享到 Facebook</a>
-        </li>
-        
-
-        <!-- Share Google+ -->
-        
-        <li class="menu-item">
-            <a href="https://plus.google.com/share?url=http://yoursite.com" target="_blank" rel="external noopener noreferrer nofollow">分享到 Google+</a>
-        </li>
-        
-
-        <!-- Share LinkedIn -->
-        
-        <li class="menu-item">
-            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://yoursite.com&title=" target="_blank" rel="external noopener noreferrer nofollow">分享到 LinkedIn</a>
-        </li>
-        
-
-        <!-- Share QQ -->
-        
-        <li class="menu-item">
-            <a href="http://connect.qq.com/widget/shareqq/index.html?site=jxz4real の blog&title=&summary=爷的秋秋空间&pics=http://yoursite.com/img/suka-favicon.ico&url=http://yoursite.com" target="_blank" rel="external noopener noreferrer nofollow"> 分享到 QQ</a>
-        </li>
-        
-
-        <!-- Share Telegram -->
-        
-        <li class="menu-item">
-            <a href="https://t.me/share/url?url=http://yoursite.com&text=" target="_blank" rel="external noopener noreferrer nofollow">分享到 Telegram</a>
-        </li>
-        
-
-        <!-- QRCode -->
-        
-        <li class="menu-item">
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABkklEQVR42u3ay27DMAxEUf//T7fbwBVnRm6gkMH1JgEcK2dBSHz4+mlwXSBAgBiBuMR1v//6zJ8FxXOrdUH0RiyD5mWx1aJlsN2eq+6D6I9YBVa1SBXAFab6HYiZCBWMaiMD8b2I9DBaPQNiNkIdNHdMdVClmx2I/giX6D79fGu2DeIYwhat4lBTm9Rbq3IQRxGrhV2Rs0IkMFsQg2iBUAdPksi4jUkmPiBaItLCxhVHaZNFNlNBtEK4xVSDxBXQ5XcQLRFVMuKKm6SBaoMXxBiECsadQscmQyDaIlxCkxRCySAPxAyEao7vNlx3i2UQPRFV0LnGmAKCmI9QC6gNLB282OIHRCuEa5zJwNoslh43U0EcRaTFjgrC5AUQELMQLrGxm87mi38g+iPcIM69zJP+/l/DWRDHEGlBq5LddJAbN9hBfByhAswNbNPiKJoQg2iFSF/8dZvQowMMxCiE+6OdYkhOA0GMQuwi44IZRGtEOphTw1aXzDxOakAcR+wmumlTZWvyA6IN4pMXCBAgWiN+AetLKRjlx5+eAAAAAElFTkSuQmCC" alr="QRCode">
-        </li>
-        
-
-    </ul>
-</div>
     
     
 </nav>
@@ -393,7 +343,17 @@ window.lazyLoadOptions = {
     elements_selector: ".lazyload",
     threshold: 50
 };
-document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+(function() {
+    var copyrightNow = new Date().getFullYear();
+    var copyrightContent = document.getElementById('copyright-year');
+    var copyrightSince = 2020;
+    if (copyrightSince === copyrightNow) {
+        copyrightContent.textContent = copyrightNow;
+    } else {
+        copyrightContent.textContent = copyrightSince + ' - ' + copyrightNow;
+    }
+})();
 console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
 
 </script>
